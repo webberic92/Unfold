@@ -5,7 +5,7 @@
       background-color: slategrey;
       border: 4mm ridge whitesmoke;
       width: 65%;
-      min-width: 200px;
+      min-width: 400px;
     "
   >
     <div class="center-img">
@@ -17,13 +17,23 @@
         width="100%"
         style="border-radius: 50%"
       />
-      test
     </div>
     <div class="card-body">
       <h3 class="card-text" style="font-size: 2em">
         <u> Welcome to Project Unfold. </u>
       </h3>
       <br />
+      <div class="row" style="margin-left: auto; margin-right: auto">
+        <div class="center-div">
+          <button class="favorite styled" type="button" (click)="saviors()">
+            Team
+          </button>
+          &nbsp;
+          <button class="favorite styled" type="button" (click)="roadmap()">
+            Roadmap
+          </button>
+        </div>
+      </div>
 
       <ul class="list-group">
         <li id="list" class="list-group-item">
@@ -75,21 +85,6 @@
 
       <br />
 
-      <div class="row" style="margin-left: auto; margin-right: auto">
-        <div class="col-sm-6">
-          <button class="favorite styled" type="button" (click)="saviors()">
-            Team
-          </button>
-        </div>
-        <div class="col-sm-6">
-          <button class="favorite styled" type="button" (click)="roadmap()">
-            Roadmap
-          </button>
-        </div>
-      </div>
-
-      <br />
-      <br />
       <br />
     </div>
   </div>
